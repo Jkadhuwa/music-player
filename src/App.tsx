@@ -1,8 +1,13 @@
+import { Routes, Route } from 'react-router-dom';
+import { Discover } from '@pages';
+
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <main className="h-screen">
+      <Routes>
+        <Route path="/" element={<Discover />} />
+      </Routes>
+    </main>
   );
 }
 
